@@ -73,6 +73,7 @@ Steps to run on local machine/jupyter notebook:
 To run this assignment on your local machine, you need the following software installed.
 
 Anaconda Environment
+
 Python
 
 To install Python, download it from the following link and install it on your local machine:
