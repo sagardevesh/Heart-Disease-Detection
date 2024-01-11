@@ -55,7 +55,8 @@ Once I got to know the number of components, I implemented PCA with n_components
 
 The column ‘K-Means PCA labels’ indicates the final labels after PCA was used, and has 2 labels ‘0’ and ‘1’, where ‘0’ represents ‘No Heart Disease’ and ‘1’ represents ‘Heart Disease’. Once I got the labels, I visualised the clusters using scatter plot, and marked their centroids as well. 
 
-i.	Describe how the k-means algorithm works.
+i.	Description of how the k-means algorithm works.
+
 K-means algorithm is an unsupervised clustering algorithm which classifies the unlabelled data into a specified number of clusters. Before implementing this algorithm, we need to find the optimal number of clusters that we need to obtain. This can be done either by using the elbow method, or the Silhouette measure. We then select random datapoints and define them as centroids for each cluster, since the exact centre of the datapoints is unknown. In our case, since we have 2 clusters, we will select 2 random centroids. In the next step, the k-means algorithm assigns each datapoint to its nearest cluster. It chooses the cluster for data points where the distance between the data point and the centroid is minimum. Once all the data points are assigned to their respective clusters, the centroid of each cluster is re-computed by calculating the average of all the datapoints of that cluster, post which we get new centroids. 
 Once it gets the new centroids, it computes the distance of each datapoint to each centroid, and assigns that datapoint to the cluster where the distance between the datapoint and the centroid is minimum. This process continues until optimal centroids have been found, and the assignment of each datapoint to the correct clusters are not changing anymore.
 
